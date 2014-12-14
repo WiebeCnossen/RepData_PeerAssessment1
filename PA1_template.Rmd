@@ -110,8 +110,9 @@ close to the mean, it turned out to be unaltered as well.
 The distribution did change significantly however, as can be seen in the
 histogram: the central bar far outgrows its peers. This would mean that the
 confidence interval when estimating total number of steps per day would narrow.
-This sounds nice, but in fact this does not make sense: the imputed data cannot
-be used for estimation, especially when a complete day is missing.
+This sounds nice, but in fact does not make sense: especially when a
+complete day is missing, the imputed data is nothing more than an already
+existing estimation. This should not be used for estimation purposes!
 
 ## Are there differences in activity patterns between weekdays and weekends?
 

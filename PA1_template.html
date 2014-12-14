@@ -125,7 +125,7 @@ noNaActivity$steps[!complete.cases(activity$steps)] &lt;-
 <p>As can be seen, the mean and median are equal to that of the original set. This is not completely surprising, as the substitution of the missing data was chosen carefully to minimize impact on the mean. And with the median so close to the mean, it turned out to be unaltered as well.</p>
 <div id="impact-of-imputing-on-the-estimates-of-the-total-daily-number-of-steps" class="section level3">
 <h3>Impact of imputing on the estimates of the total daily number of steps</h3>
-<p>The distribution did change significantly however, as can be seen in the histogram: the central bar far outgrows its peers. This would mean that the confidence interval when estimating total number of steps per day would narrow. This sounds nice, but in fact this does not make sense: the imputed data cannot be used for estimation, especially when a complete day is missing.</p>
+<p>The distribution did change significantly however, as can be seen in the histogram: the central bar far outgrows its peers. This would mean that the confidence interval when estimating total number of steps per day would narrow. This sounds nice, but in fact does not make sense: especially when a complete day is missing, the imputed data is nothing more than an already existing estimation. This should not be used for estimation purposes!</p>
 </div>
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
